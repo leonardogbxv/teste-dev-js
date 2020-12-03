@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI ,Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+form {
+  color: #535353;
+  background-color: #f3f3f3;
+  padding: 4rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 5rem 0rem 5rem;
+  margin: 4rem 0rem 4rem 0rem;
+
+  max-width:60rem;
+}
+
+.form-div {
+  display: flex;
+  flex-flow: column;
+  margin-bottom:1rem;
+}
+
+.form-div h2 {
+  margin: 0;
+}
+
+.form-div input, textarea, select {
+  font-size: 15px;
+  color: #535353;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form-div textarea {
+  height: 5rem;
+}
+
+.form-div button {
+  font-size: 15px;
+  color: #535353;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  transition: background-color .18s ease-in-out,
+              color .18s ease-in-out;
+}
+
+.form-div button:focus {
+  outline:0;
+  box-shadow:0 0 0 .2rem rgba(111, 131, 138, 0.5);
+}
+.form-div button[type="submit"]:focus {
+  box-shadow:0 0 0 .2rem rgba(100, 200, 236, 0.8);
+}
+
+.form-div button:hover {
+  background-color: rgba(34, 40, 43, 0.5);
+  color: white;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.form-div button[type="submit"]:hover {
+  background-color: rgba(7, 137, 202, 0.8);
+}
+
+.form-div-checkbox,
+.form-div-radio {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+
+.form-div .quiz {
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  padding: 10px;
+  background-color: rgb(184, 184, 184, 0.2);
+  border-radius: 5px;
+}
+
+.form-div label {
+  margin-bottom: .2rem;
+}
+
+.form-div-checkbox input,
+.form-div-radio input {
+  margin: 0 5px 0 5px;
+}
+
+.mensagem-erro {
+  color: red;
+  margin: 0;
+}
