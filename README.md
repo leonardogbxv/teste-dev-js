@@ -10,11 +10,11 @@ https://leonardogbxv.github.io/teste-dev-js
 
 - Criar um formulário com validações de todos os campos;
 
-- Colcoar mensagens de erros na tela de acordo com a validação;
+- Colocar mensagens de erros na tela de acordo com a validação;
 
 - Fazer autenticação de usuário por meio de um arquivo .json;
 
-- Criptografar e Descriptografar uma campo senha;
+- Criptografar e Descriptografar um campo senha;
 
 - Usar estilização com CSS puro nos elementos.
 
