@@ -1,0 +1,5 @@
+// Necessário tem servidor rodando para o funcionamento correto da aplicação.
+// Caso esteja usando o VSCode, a extensão "Live Server" é uma boa para isso.
+{
+	"liveServer.settings.port": 5500
+}

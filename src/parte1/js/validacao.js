@@ -37,13 +37,11 @@ function validacao() {
 // Validação de campos onde o atributo "value" retorna vazio caso não seja inserido nada
 function validacaoElementoValue(elemento, container) {  
   if(elemento.value === '') {
+    // Adiciona a mensagem de erro sempre após o ultimo filho do elemento 
+    // (container: ".form-div" que contém o id do campo em questão)
     container.insertAdjacentHTML('afterend', `<p class="mensagem-erro">Este campo é obrigatório!</p>`);
 
     return false;
-  }
-  /** Validação de usuário e senha */
-  if(usuarioInput) {
-    
   }
 
   return true;

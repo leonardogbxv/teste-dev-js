@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>1 - Formulário</title>
+</head>
+<body>
+  <div class="container">
+    <div id="teste1">
+      <header>
+        <nav>
+          <a href="./index.html">Formulário</a>
+          <a href="./usuario.html">Validacao JSON</a>
+          <a href="../../parte2/html/index.html">Tabela</a>
+        </nav>
+      </header>
+      
+      <main>
+        <form>
+          <div class="form-div">
+            <h2>Formulário</h2>
+          </div>
+      
+          <div class="form-div">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario" required />
+          </div>
+      
+          <div class="form-div">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required />
+          </div>
+      
+          <div class="form-div">
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10" required></textarea>
+          </div>
+      
+          <div class="form-div">
+            <select name="select" id="select" required>
+              <option disabled selected value> -- Selecione uma opção -- </option>
+              <option value="opcao1">Opção 1</option>
+              <option value="opcao2">Opção 2</option>
+              <option value="opcao3">Opção 3</option>
+            </select>
+          </div>
+      
+          <div class="form-div">
+            <p class="quiz">7 + '4' = 11?</p>
+            <div class="form-div-radio">
+              <input type="radio" name="radio" value="sim" id="radio1" required />
+              <label for="radio">Sim</label>
+              <input type="radio" name="radio" value="nao" id="radio2" required />
+              <label for="radio2">Não</label>
+            </div>
+          </div>
+      
+          <div class="form-div">
+            <div class="form-div-checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" required />
+              <label for="checkbox">Eu li e aceito os <a href="#">termos de uso</a></label>
+            </div>
+          </div>
+      
+          <div class="form-div">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <script src="../js/validacao.js"></script>
+  <script src="../js/autenticacao.js"></script>
+</body>
+</html>

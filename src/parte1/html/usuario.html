@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>1 - Formulário</title>
+</head>
+<body>
+  <div class="container">
+    <div id="teste1">
+      <header>
+        <nav>
+          <a href="./index.html">Formulário</a>
+          <a href="./usuario.html">Validacao JSON</a>
+          <a href="../../parte2/html/index.html">Tabela</a>
+        </nav>
+      </header>
+      
+      <main>
+        <form onsubmit="return false">
+          <div class="form-div">
+            <h2>Autenticação</h2>
+          </div>
+      
+          <div class="form-div">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario" required />
+          </div>
+      
+          <div class="form-div">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required />
+          </div>
+      
+          <div class="form-div">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+
+        <!-- Senha crifrada -->
+        <form onsubmit="return false" id="cifra">
+          <div class="form-div">
+            <h2>Encriptar/Decriptar</h2>
+          </div>
+      
+          <div class="form-div">
+            <label for="senha2">Senha</label>
+            <input type="password" name="senha2" id="senha2" required />
+          </div>
+
+          <div class="form-div">
+            <label for="senha-criptada">Senha criptografada</label>
+            <div class="retorno" id="senha-criptada"></div>
+          </div>
+
+          <div class="form-div">
+            <label for="senha-decriptada">Senha descriptografada</label>
+            <div class="retorno" id="senha-decriptada"></div>
+          </div>
+      
+          <div class="form-div">
+            <button type="submit" id="enviarSenha">Enviar</button>
+          </div>
+        </form>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="../js/autenticacao.js"></script>
+  <script src="../js/senhaCifrada.js"></script>
+</body>
+</html>

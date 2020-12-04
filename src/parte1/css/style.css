@@ -5,6 +5,44 @@ body {
   font-weight: 400;
 }
 
+header {
+  margin-bottom: 2rem;
+}
+
+header nav a {
+  text-decoration: none;
+  background-color: #eeeeee;
+  width: max-content;
+  font-size: 15px;
+  color: #535353;
+  border-radius: 10px;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid #ccc;
+  transition: background-color .18s ease-in-out,
+              color .18s ease-in-out;
+}
+
+header nav a:hover {
+  background-color: rgba(139, 115, 88, 0.8);
+  color: white;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+header nav a:focus {
+  outline:0;
+  box-shadow:0 0 0 .2rem rgba(139, 115, 88, 0.5);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #cifra {
+  margin-left: 2rem;
+}
+
 form {
   color: #535353;
   background-color: #f3f3f3;
@@ -13,7 +51,6 @@ form {
   border-radius: 10px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-
 }
 
 .container {
@@ -21,8 +58,6 @@ form {
   justify-content: center;
   padding: 0rem 5rem 0rem 5rem;
   margin: 4rem 0rem 4rem 0rem;
-
-  max-width:60rem;
 }
 
 .form-div {
@@ -35,7 +70,10 @@ form {
   margin: 0;
 }
 
-.form-div input, textarea, select {
+.form-div input, 
+textarea,
+select,
+.retorno {
   font-size: 15px;
   color: #535353;
   border-radius: 5px;
@@ -70,7 +108,7 @@ form {
 .form-div button:hover {
   background-color: rgba(34, 40, 43, 0.5);
   color: white;
-  text-decoration:none;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -104,5 +142,10 @@ form {
 
 .mensagem-erro {
   color: red;
+  margin: 0;
+}
+
+.mensagem-sucesso {
+  color: green;
   margin: 0;
 }
